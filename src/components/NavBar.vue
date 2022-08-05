@@ -2,7 +2,7 @@
   <v-app-bar>
     <v-content>
     <v-container>
-    <div class="align-center"><h1>Countries Catalog</h1></div>
+    <div class="align-left"><h1>Countries Catalog</h1></div>
     </v-container>
 </v-content>
   </v-app-bar>

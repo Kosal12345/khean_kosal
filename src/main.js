@@ -6,6 +6,12 @@ import "./utils/filter";
 import VuePaginate from "vue-paginate";
 Vue.use(VuePaginate);
 
+import JwPagination from 'jw-vue-pagination';
+Vue.component('jw-pagination', JwPagination);
+
+
+
+
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import vuetify from "./plugins/vuetify";
 
