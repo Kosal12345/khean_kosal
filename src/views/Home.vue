@@ -33,6 +33,7 @@
       <v-col v-for="country in countries" :key="country.alpha3Code" md="3">
         <country-card v-bind="country"></country-card>
       </v-col>
+
     </v-row>
   </v-container>
 </template>
@@ -53,9 +54,11 @@ export default {
       regions: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
     };
   },
+  
   mounted() {
     this.getCountries();
   },
+
   watch: {
     search: {
       immediate: true,
@@ -91,6 +94,7 @@ export default {
         this.callAPI(url);
       });
     },
+
     callAPI(url) {
       this.$http
         .get(url)
